@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"/>
+
+      <style>
+        body{
+    background-color:  #1E88E5;
+  
+}
+.father{
+
+    margin-top: 20%;
+   
+}
+.father section{
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+      </style>
+
+  </head>
+
+  <body>
+    <main>
+
+        <section class="father">
+        <section> please Enter the Target Score</section>
+        <section ><input type="number" style="padding: 15px;" id="number"></section> 
+        <section><button type="submit" id="SB" style="padding: 15px" >submit</button></section>
+    </section>
+
+       
+
+    </main>
+  
+  </body>
+
+  <script>
+
+    const submitB=document.getElementById('SB') ;
+
+    
+
+    function Tscore(){
+
+    event.preventDefault(); // Prevent the form from submitting by default
+
+    const numberInput = document.getElementById('number');
+    const enteredNumber = parseFloat(numberInput.value);
+
+    if (isNaN(enteredNumber)) {
+      alert('Please enter a valid number.');
+    } else {
+      // Valid number entered, proceed to the next page
+
+      localStorage.setItem('number',enteredNumber);
+        
+    const customURL = 'Dice-game.html';
+    window.location.href = customURL;
+    window.location.assign(customURL);
+    
+    // Current page won't get saved in the history:
+    window.location.replace(customURL); 
+    
+    
+    // Gecko only:
+    window.document.location = customURL
+    }
+    }
+    submitB.addEventListener('click' , Tscore);
+    
+  </script>
+</html>

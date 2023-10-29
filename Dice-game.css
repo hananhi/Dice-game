@@ -1,0 +1,114 @@
+body{
+    background-image:url(bg.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+
+.boxG{
+  
+    border-radius: 10px;
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+
+}
+.boxS{
+    border: 1px solid white;
+    border-radius: 10px;
+    height: 120px;
+    width: 150px;
+    text-align: center;
+    color: white;
+    background-color: #1E88E5;
+    font-size: xx-large;
+}
+
+.middile {
+    
+    display: flex ;
+    flex-direction: column;
+    width: 130px;
+   margin-left: 640px;
+   margin-top: -40px;
+   justify-content: space-between;
+}
+
+.middile div {
+ padding: 20px;
+  
+  }
+#oneP{
+    margin-top: 40px;
+    margin-left: 230px;
+}
+#twoP{
+    margin-top: -80px;
+    margin-left: 1000px;
+}
+#oneC{
+    margin-top: 10px;
+    margin-left: 250px;
+}
+#twoC{
+   
+    margin-top: -122px;
+    margin-left: 1000px;
+}
+#d1{
+   
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+#d2{
+   
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+ }
+ #hold{
+   
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: #1E88E5;
+ }
+ #roll-dice{
+   color: white;
+    height: 50px;
+    width: 100px;
+    background-color: #1E88E5;
+
+ }
+ #newg{
+    color: white;
+     height: 30px;
+     width: 100px;
+     background-color: #1E88E5;
+     
+  }
+
+  #shadeOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 43%; /* Adjust this to control the width of the shaded area */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity as needed */
+    display: none;
+    z-index: 9999; /* Ensure it's on top of other content */
+}
+div{
+    color: white;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+#winS{
+    margin-left: 170px;
+  
+}
